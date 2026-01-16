@@ -2,7 +2,7 @@ import { Bulk, connect, Redis } from "../../deps.ts";
 import { Logger } from "../Helpers/Logger.ts";
 import { CONSTANTS } from "../utils.ts";
 
-const enableCache = Deno.env.get("ENABLE_REDIS") || false;
+const enableCache = Deno.env.get("ENABLE_REDIS") === "true";
 
 // https://developer.redis.com/develop/deno/
 class CacheProvider {
@@ -25,6 +25,7 @@ class CacheProvider {
       port: Number(Deno.env.get("REDIS_PORT")) || 6379,
       username: Deno.env.get("REDIS_USERNAME") || "",
       password: Deno.env.get("REDIS_PASSWORD") || "",
+      tls: Deno.env.get("TLS") === "true",
     });
   }
 
