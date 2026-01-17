@@ -62,7 +62,7 @@ readme, change the `?username=` value to your GitHub's username.
 ```
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ryo-ma&column=8&rank=SSS,SS,S,AAA,AA,A,B,C" />
+  <img src="https://github-profile-trophy.yuhiri.top/?username=ryo-ma&column=8&rank=SSS,SS,S,AAA,AA,A,B,C" />
 </p>
 
 ## Use theme
