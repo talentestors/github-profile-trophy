@@ -6,6 +6,7 @@ rules: # Array of rules
     mergeUnstable: true # Optional, merge pull request even when the mergeable_state is not clean. Default: false
   - base: main
     upstream: upstream # Required. Can be a branch in the same forked repo.
+    mergeMethod: merge
     conflictReviewers: # Optional, on merge conflict assign a reviewer
       - talentestors
 label: ":robot: auto-sync"
